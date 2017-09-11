@@ -1,0 +1,64 @@
+<!doctype>
+<html>
+<title>Project</title>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/cssfile.css" type="" />
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <script src="../js/jquery.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="../css/jsgrid.min.css" />
+    <link type="text/css" rel="stylesheet" href="../css/jsgrid-theme.min.css" />
+    <script type="text/javascript" src="../js/jsgrid.min.js"></script>
+    
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <div id="jsGrid"></div>
+
+
+    <script>
+        $(function () {
+
+            $("#jsGrid").jsGrid({
+                height: "auto",
+                width: "80%",
+
+                sorting: true,
+                paging: false,
+                autoload: true,
+
+                controller: {
+                    loadData: function () {
+                        var d = $.Deferred();
+
+                        $.ajax({
+                            url: "http://10.1.7.113:4000/api/users",
+                            dataType: "json"
+                        }).done(function (response) {
+                            //console.log(response);
+                            d.resolve(response);
+                        });
+
+                        return d.promise();
+                    }
+                },
+
+                fields: [
+                    { name: "name" },
+                    { name: "email", type: "textarea", width: 150 }
+
+                ]
+            });
+
+        });
+    </script>
+
+
+</body>
+
+</html>
