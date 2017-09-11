@@ -37,7 +37,7 @@
                         var d = $.Deferred();
 
                         $.ajax({
-                            url: "http://10.1.7.113:4000/api/users",
+                            url: "http://10.1.7.113:4000/api/supdocs",
                             dataType: "json"
                         }).done(function (response) {
                             //console.log(response);
@@ -49,11 +49,15 @@
                 },
 
                 fields: [
-                    { name: "name" },
-                    { name: "email", type: "textarea", width: 150 },
-                    { name: "role" }
-
-                ]
+                    { name: "_id" },
+                    { name: "userid" },
+                    { name: "timestamp"},
+                    { name: "modifiedBy"},
+                    { name: '_date', map: 'Current>_date' },
+                    { name: 'name', map: 'Current>task>name' },
+                     { name: 'projecid', map: 'Current>task>projecid' }
+                  
+                    ]
             });
 
         });
