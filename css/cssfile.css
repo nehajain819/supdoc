@@ -1,0 +1,161 @@
+#f1{
+    background-color: black;
+    height: 300px;
+    width: 400px;
+    float: left;
+    margin-left: 35%;
+    margin-top: 2%;
+}
+#textbox1{
+    
+}
+#l3{
+    background-color: black;
+    border: none;
+    color: red;
+}
+#l4{
+    background-color: black;
+    border: none;
+    color: red;
+    background-repeat: none;
+
+
+}
+
+body{
+    background-image: url("../image/bk2.jpg")
+}
+#l1{
+    font-size: 15px;
+    font-weight: bold;
+    background-color:black;
+    border: none;
+    color: gray;
+    margin-left: 0px;
+    margin-top: 10px;
+}
+#l2{
+    font-size: 15px;
+    font-weight: bold;
+    background-color:black;
+    border: none;
+    color: white;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+#lable1{
+    font-size: 15px;
+    font-weight: bold;
+    background-color:black;
+    border: none;
+    color: white;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+#lable2{
+    font-size: 15px;
+    font-weight: bold;
+    background-color:black;
+    border: none;
+    color: white;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+#b1{
+    margin: 20px;
+    margin-left: 35%;
+}
+#nb{
+    margin: 20px;
+    margin-top: 8%;
+    margin-left: 40%;
+}
+#nb1{
+    margin: 20px;
+    margin-top: 8%;
+    margin-left: 40%;
+}
+#header1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 32%;
+    margin-top: 30px;
+    color: black;
+    
+    
+}
+#f2{
+    background-color: black;
+    height: 450px;
+    width: 550px;
+    float: left;
+    margin-left: 30%;
+    margin-top: 5%;
+}
+#f3{
+  background-color: black;
+    height: 500px;
+    width: 480px;
+    float: left;
+    margin-left: 32%;
+    margin-top: 5%;  
+    padding: 2%;
+}
+#f4{
+    background-color: black;
+    height: 440px;
+    width: 480px;
+    float: left;
+    margin-left: 32%;
+    margin-top: 7%;  
+}
+#s{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 28%;
+    margin-top: 20px;
+    color: white;
+    text-decoration: underline;
+}
+
+#formfeild{
+    margin-left: 0%;
+}
+#formfeild2{
+    margin-left: 10%;
+    margin-top: 10%;
+}
+#txt1{
+    margin-top: 25px;
+    margin-left: 17%;
+    
+}
+#txt2{
+    margin-top: 25px;
+    margin-left: 15%;
+}
+#elementId{
+    width: 300px;
+    margin-left: 30px;
+}
+#elementId1{
+    margin-left: 80px;
+    width: 200px;
+}
+#elementId2{
+margin-left: 65px;
+ width: 200px;
+}
+#textboxsub{
+  width: 300px;
+}
+#textboxsub2{
+     width: 300px;
+}
+#feilds1{
+margin-left: 10%;
+margin-top: 10%;
+}

@@ -1,0 +1,112 @@
+#background_image{
+margin-left: -110px;
+width:119.20%;
+height: 450px;
+margin-top: -20px;
+
+}
+#header1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 32%;
+    margin-top: 30px;
+    color: black;
+    
+    
+}
+#headercolor{
+  background-color: black;
+}
+#ul1{
+   background-color: black;
+}
+#ul1 li a:hover{
+    background-color: lightcoral;
+}
+#body1{
+    background-color: gray;
+}
+#myCarousel{
+    text-decoration-style: none;
+    text-decoration: none;
+    
+}
+button{
+    float:left;
+}
+.carousel-control.right, .carousel-control.left {
+     background-image: none;
+     color: #f4511e;
+  }
+  .carousel-indicators li {
+      border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+      background-color: #f4511e;
+  }
+  #images{
+      height: 450px;
+  }
+  #myCarousel{
+      margin-top: 30px;
+  }
+  #p1{
+      text-align: center;
+      font-size: 40px;
+      margin-top: 50px;
+      font-weight: bold;
+      color: white;
+      
+  }
+  #p3{
+     text-align: center;
+      font-size: 15px;
+      margin-top: 20px;
+      font-weight: bold;
+      color: orangered;
+  }
+ #p2{
+      text-align: center;
+      font-size: 15px;
+      margin-top: 20px;
+      font-weight: bold;
+      color: white;
+      margin-left: 50px;
+      margin-right: 50px;
+ }
+
+ #bodyid{
+     background-image: url("../image/bk2.jpg");
+     background-repeat: no-repeat;
+     background-size: 100%;
+ }
+ #username{
+     width: 30%;
+ }
+ #password{
+     width:30%;
+ }
+ #form1{
+     margin-left:34%;
+     margin-top:7%;
+     background-color: black;
+     color:white;
+     width: 350px;
+ }
+ #inner{
+     margin-left: 11%;
+     width: 800px;
+     padding: 5%;
+ }
+ #inner1{
+     margin-left: 30%;
+     width: 800px;
+     padding: 5%;
+ }
+#reg{
+    margin-left: 25%;
+    margin-top: -2%;
+    margin-bottom: 2%;
+    text-decoration: underline;
+}
