@@ -1,8 +1,121 @@
-var xhttp = new XMLHttpRequest();
+<!doctype html>
+<html lang="en">
+<title>
+</title>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+
+    <script src="../js/jquery.js">
+
+    </script>
+    <script src="../bootstrap/js/bootstrap.min.js">
+
+    </script>
+</head>
+
+<body onload="validatefun()">
+    <table>
+  <tbody>
+    <tr>
+      <th>userid</th>
+      <th>timestamp</th>
+    </tr>
+  <tbody>
+</table>
+<script>
+//  var xhttp = new XMLHttpRequest();
+//                     xhttp.onreadystatechange = function() {
+//                         if (this.readyState == 4 && this.status == 200) {
+                       
+
+//  var data = JSON.parse(this.responseText);
+// alert(data);
+
+function validatefun(){
+                var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML = this.responseText;
+    }
+  };
+  
+  xhttp.open("POST", "file:///E:/Projects/supdoc/html/report.html", true);
+  xhttp.setRequestHeader("Content-type", "application/json");
+// var obj=document.getElementById("elementId1").options[document.getElementById("elementId1").selectedIndex];
+// //alert(obj.value);
+// var ans1 = obj.value;
+
+// var obj0=document.getElementById("elementId2").options[document.getElementById("elementId2").selectedIndex];
+// //alert(obj.value);
+// var ans0 = obj0.value;
+// alert(ans0);
+// var ans2 = obj.name;
+// //alert(ans2);
+// g = new Date();
+
+// var current1 = {
+//     _date : new Date()
+// };
+
+
+
+// // var current = {
+// //              _date= g
+// //             //   task = {
+// //             //         //
+                    
+// //             //     }
+// // }
+
+
+// var nam8 = document.getElementById("txt2").value;
+// var nam9 = document.getElementById("txt1").value;
+ 
+ var xhttp = new XMLHttpRequest();
                     xhttp.onreadystatechange = function() {
                         if (this.readyState == 4 && this.status == 200) {
                        
 
  var data = JSON.parse(this.responseText);
- }
- }
+alert(data);
+   xhttp.send(JSON.parse(data));
+
+
+var tr;
+for (var i = 0; i < data.length; i++) {
+  tr = $('<tr/>');
+  tr.append("<td>" + data[i][0] + "</td>");
+  tr.append("<td>" + data[i][1] + "</td>");
+ var tables= $('table').append(tr);
+ //alert(tables);
+}
+   }
+                    }
+                    xhttp.open("GET", "http://10.1.7.113:4000/api/supdocs", true);
+                    xhttp.send();
+}
+
+//     var data = [
+//   ["Flash", 22722],
+//   ["Ignite", 5126],
+//   ["Heal", 4666],
+//   ["Smite", 3970],
+//   ["Teleport", 3892],
+//   ["Exhaust", 3118],
+//   ["Mark", 2495],
+//   ["Ghost", 571],
+//   ["Barrier", 459],
+//   ["Clarity", 239],
+//   ["Cleanse", 132],
+//   ["Clairvoyance", 10]
+// ];
+
+
+    </script>
+</body>
+
+</html>
