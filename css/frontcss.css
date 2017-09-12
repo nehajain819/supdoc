@@ -5,13 +5,29 @@ height: 450px;
 margin-top: -20px;
 
 }
+#l3{
+    background-color: black;
+    border: none;
+    color: red;
+}
+#l4{
+    background-color: black;
+    border: none;
+    color: red;
+}
+#l5{
+    background-color: black;
+    border: none;
+    color: red;
+}
+
 #header1{
     font-family: 'Times New Roman', Times, serif;
     font-size: 50px;
     font-weight: bold;
-    margin-left: 32%;
+    margin-left: 34%;
     margin-top: 30px;
-    color: black;
+    color: white;
     
     
 }
@@ -75,6 +91,18 @@ button{
       margin-left: 50px;
       margin-right: 50px;
  }
+ #login{
+     margin-top: 2%;
+     font-size: 18px;
+     color: white;
+     text-decoration: underline;
+     /*background-color: white;*/
+     width:350px;
+     margin-left: -40px;
+     height: 30px;
+     /*margin-top: -80px;*/
+     text-align: center;
+ }
 
  #bodyid{
      background-image: url("../image/bk2.jpg");
@@ -88,7 +116,7 @@ button{
      width:30%;
  }
  #form1{
-     margin-left:34%;
+     margin-left:33%;
      margin-top:7%;
      background-color: black;
      color:white;
@@ -97,7 +125,7 @@ button{
  #inner{
      margin-left: 11%;
      width: 800px;
-     padding: 5%;
+     /*padding: 3%;*/
  }
  #inner1{
      margin-left: 30%;

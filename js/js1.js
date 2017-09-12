@@ -15,6 +15,7 @@
 	                    document.getElementById('l4').value = 'It is not number Please Enter The Number';
                                 }
                 }
+               
                 if(a!=""&& b!=""){
                 var xmlhttp = new XMLHttpRequest();
                 xmlhttp.open("POST", url, true);
@@ -42,20 +43,34 @@
                                     
                                         document.getElementById("demo").innerHTML = responcestring;                                  
                             //cFunction(this);
+                            
                     }
                                                         
                         else
                         {
-                             alert("ERR OR: AJAX request status = " + xmlhttp.status);
+                            // alert("ERR OR: AJAX request status = " + xmlhttp.status);
                                // console.log("ERR OR: AJAX request status = " + xmlhttp.status);
                         }
                         // xmlhttp.open("GET", url, true);
                         // xmlhttp.send();
+                         //document.getElementById('l5').style.display = 'block';
+                            
                 }
+                document.getElementById('l5').style.display = 'block';
+                 document.getElementById('l5').value = 'Register SucessFully'
                 }
                 else{
-                    alert("Please feel form")
+                     document.getElementById('l5').value = 'Please Fill The All Fields';
                 }
+                document.getElementById('textboxsub').value="";
+                document.getElementById('textboxsub2').value="";
+            }
+            function hideele(){
+                 document.getElementById('l3').style.display = 'none';
+            }
+            function hideele1(){
+                 document.getElementById('l4').style.display = 'none';
+                  document.getElementById('l5').style.display = 'none';
             }
             // function myFunction(xmlhttp) {
             //                             var responcestring = xmlhttp.responseText;

@@ -4,11 +4,12 @@ function validatefun(url) {
     var b = document.getElementById('password').value
     if (a == "") {
         // document.getElementById('l3').value = 'Please Enter text';
-        alert("Please Enter text");
+                    document.getElementById('l3').value = 'Please Enter text';
+               
     }
     if (b == "") {
         // document.getElementById('l4').value = 'Please Enter Number';
-        alert("Please Enter Password");
+         document.getElementById('l4').value = 'Please Enter text';
     }
 
     if (a != "" && b != "") {
@@ -31,34 +32,57 @@ function validatefun(url) {
                 console.log('ok');
                 var responcestring = xmlhttp.responseText;
                 console.log(responcestring);
-                alert(responcestring);
-                if (responcestring == "false") {
-                    alert("User is not valid");
-                }
-                else {
-                    var t = document.getElementById('sub1').href = "../html/main.html#";
-                }
+                //alert(responcestring);
+                
                 $("html,body").css("cursor", "default");
                 //             xmlhttp.open("GET", url, true);
                 // xmlhttp.send();
 
 
-                document.getElementById("demo").innerHTML = responcestring;
+                //document.getElementById("demo").innerHTML = responcestring;
                 //cFunction(this);
+               
+                if (responcestring == "false") {
+                   // alert("User is not valid");
+                    function msg(){
+                        document.getElementById('l5').style.display = 'block';
+                 document.getElementById('l5').value = 'User is invalid';
+                    }
+                    msg();
+                }
+                else {
+                      document.getElementById('l5').style.display = 'block';
+                 document.getElementById('l5').value = 'Register SucessFully';
+                   
+                    }
+                    
             }
 
             else {
-                alert("ERR OR: AJAX request status = " + xmlhttp.status);
-                // console.log("ERR OR: AJAX request status = " + xmlhttp.status);
+               // alert("ERR OR: AJAX request status = " + xmlhttp.status);
+                console.log("ERR OR: AJAX request status = " + xmlhttp.status);
             }
             // xmlhttp.open("GET", url, true);
             // xmlhttp.send();
+           
         }
+document.getElementById('sub1').href = "../html/main.html#";
+       
     }
     else {
-        alert("no");
+         document.getElementById('l5').value = 'Please Fill The All Fields';
     }
+   document.getElementById('username').value="";
+     document.getElementById('password').value="";
 }
+
+ function hideele(){
+                 document.getElementById('l3').style.display = 'none';
+            }
+            function hideele1(){
+                 document.getElementById('l4').style.display = 'none';
+                  document.getElementById('l5').style.display = 'none';
+            }
             // function myFunction(xmlhttp) {
             //                             var responcestring = xmlhttp.responseText;
             //                             document.getElementById("demo").innerHTML =(responcestring);

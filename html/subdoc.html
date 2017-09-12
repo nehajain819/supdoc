@@ -49,29 +49,18 @@
     <form id="f1">
         <div id="feilds1">
             <div class="form-group" id="inner">
-                <label for="usr">Project Name:</label>
-                <input type="text" id="textboxsub" class="form-control" id="usr">
+                <label for="usr" id="labelproj">Project Name:</label>
+                <input type="text" onclick="hideele()" id="textboxsub" class="form-control" id="usr">
                 <input label="Error Name" value="" id="l3" />
             </div>
-
-
-            <!--<input label="Project Name" value="Project Name" id="l1" />
-        <input type="text" id="textbox1" value="" />
-        <input label="Error Name" value="" id="l3" />
-        </br>-->
             <div class="form-group" id="inner">
-                <label for="usr" id="">No Of Members:</label>
-                <input type="text" id="textboxsub2" class="form-control" id="usr">
+                <label for="usr" id="labelproj">No Of Members:</label>
+                <input type="text" onclick="hideele1()" id="textboxsub2" class="form-control" id="usr">
                 <input label="Error Name" value="" id="l4" />
             </div>
-
-
-            <!--<input label="No Of Members" value="No Of Members" id="l2" />
-        <input type="text" id="textbox2" value="" />
-        <input label="Error Name" value="" id="l4" />
-        </br>-->
-
             <input type="button" value="SUBMIT" id="b1" onclick="validatefun('http://10.1.7.113:4000/api/projects')" />
+            </br>
+                 <input label="Error Name" value="" id="l5" />
         </div>
     </form>
 

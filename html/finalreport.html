@@ -49,13 +49,13 @@
                 },
 
                 fields: [
-                    { name: "_id" },
-                    { name: "userid" },
-                    { name: "timestamp"},
-                    { name: "modifiedBy"},
-                    { name: '_date', map: 'Current>_date' },
-                    { name: 'name', map: 'Current>task>name' },
-                     { name: 'projecid', map: 'Current>task>projecid' }
+                    // { name: "_id", width: 100  },
+                    // { name: "userid", width: 100  },
+                    // { name: "timestamp", width: 100 },
+                    // { name: "modifiedBy", width: 100 },
+                    { name: "_date", map: "Current>_date",width: 100  },
+                    { name: "name", map: "Current>task>name", width: 100  },
+                     { name: "projecid", map: "Current>task>projecid", width: 100  }
                   
                     ]
             });

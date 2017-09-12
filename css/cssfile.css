@@ -1,6 +1,6 @@
 #f1{
     background-color: black;
-    height: 300px;
+    height: 320px;
     width: 400px;
     float: left;
     margin-left: 35%;
@@ -14,7 +14,43 @@
     border: none;
     color: red;
 }
+#la1{
+    background-color: black;
+    border: none;
+    color: red;
+}
+#la2{
+    background-color: black;
+    border: none;
+    color: red;
+}
+#la3{
+    background-color: black;
+    border: none;
+    color: red;
+}
+#la4{
+    background-color: black;
+    border: none;
+    color: red;
+}
+#la5{
+    background-color: black;
+    border: none;
+    color: red;
+}
+
+
+
 #l4{
+    background-color: black;
+    border: none;
+    color: red;
+    background-repeat: none;
+
+
+}
+#l5{
     background-color: black;
     border: none;
     color: red;
@@ -31,7 +67,7 @@ body{
     font-weight: bold;
     background-color:black;
     border: none;
-    color: gray;
+    color: white;
     margin-left: 0px;
     margin-top: 10px;
 }
@@ -62,6 +98,9 @@ body{
     margin-left: 30px;
     margin-top: 10px;
 }
+#labelproj{
+    color: white;
+}
 #b1{
     margin: 20px;
     margin-left: 35%;
@@ -80,9 +119,9 @@ body{
     font-family: 'Times New Roman', Times, serif;
     font-size: 50px;
     font-weight: bold;
-    margin-left: 32%;
+    margin-left: 33%;
     margin-top: 30px;
-    color: black;
+    color: white;
     
     
 }
@@ -96,13 +135,17 @@ body{
 }
 #f3{
   background-color: black;
-    height: 500px;
+    height: 612px;
     width: 480px;
     float: left;
     margin-left: 32%;
     margin-top: 5%;  
     padding: 2%;
 }
+#dec{
+    color:white;
+}
+
 #f4{
     background-color: black;
     height: 440px;

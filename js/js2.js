@@ -1,7 +1,7 @@
 
             function validatefun(url){
                     
-
+ 
 
                 var a= document.getElementById('textbox1').value;
                  var b= document.getElementById('password1').value;
@@ -15,28 +15,29 @@
 
                 if(a=="")
                 {
-                    document.getElementById('l3').value = 'Please Enter text';
-                    alert("enter value");
+                    document.getElementById('la1').value = 'Please Enter text';
+                    //alert("enter value");
                 }
                 if(b=="")
                 {
-                    document.getElementById('l3').value = 'Please Enter text';
-                    alert("enter value");
+                    document.getElementById('la2').value = 'Please Enter text';
+                   // alert("enter value");
                 }
                  if(n=="")
                 {
-                    document.getElementById('l3').value = 'Please Enter text';
-                    alert("enter value");
+                    document.getElementById('la3').value = 'Please Enter text';
+                  //  alert("enter value");
                 }
                  if(c=="")
                 {
-                    document.getElementById('l3').value = 'Please Enter text';
-                    alert("enter value");
+                    document.getElementById('la4').value = 'Please Enter text';
+                   // alert("enter value");
                 }
                 
                 if(value=="Team Members"){
                     document.getElementById("showbar").style.visibility = "hidden"; 
                 }
+                // document.getElementById('nb').onclick = '../html/login.html'; 
                 if(a!=""&& b!=""&& n!="" && c!=""){
                 if(b==n)
                 {
@@ -66,18 +67,22 @@
                         // xmlhttp.send();
 
                                     
-                                        document.getElementById("demo").innerHTML = responcestring;                                  
+                                       // document.getElementById("demo").innerHTML = responcestring;                                  
                             //cFunction(this);
+                            
                     }
                                                         
                         else
                         {
-                             alert("ERR OR: AJAX request status = " + xmlhttp.status);
+                             //alert("ERR OR: AJAX request status = " + xmlhttp.status);
                                // console.log("ERR OR: AJAX request status = " + xmlhttp.status);
                         }
                         // xmlhttp.open("GET", url, true);
                         // xmlhttp.send();
+                        
                 }
+                 document.getElementById('n').href = "../html/login.html";  
+                //  document.getElementById('n').href = "../html/login.html"; 
             }
             // function myFunction(xmlhttp) {
             //                             var responcestring = xmlhttp.responseText;
@@ -85,13 +90,21 @@
             //                             }
 
             else{
-                document.getElementById('error').value = 'Please Enter text';
-                alert("password and confirm password are not match");
+                document.getElementById('la3').value = 'Password Is Not Match';
+               // alert("password and confirm password are not match");
             }
                 }
                 else{
-                    alert("please fill full form");
+                   document.getElementById('la5').value = 'Please Fill The Form';
                 }
+                document.getElementById('textbox1').value="";
+               document.getElementById('password1').value="";
+                document.getElementById('password').value="";
+                   document.getElementById('username').value="";
+             
+            }
+            function navg(){
+               
             }
             function drop(){
                  var e = document.getElementById("elementId");

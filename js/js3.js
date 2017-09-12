@@ -90,7 +90,7 @@ var ans1 = obj.value;
 var obj0=document.getElementById("elementId2").options[document.getElementById("elementId2").selectedIndex];
 //alert(obj.value);
 var ans0 = obj0.value;
-alert(ans0);
+//alert(ans0);
 var ans2 = obj.name;
 //alert(ans2);
 g = new Date();
@@ -150,13 +150,14 @@ xhttp.onreadystatechange = function() {
                         // xmlhttp.send();
 
                                     
-                                        document.getElementById("demo").innerHTML = responcestring;                                  
+                                        //document.getElementById("demo").innerHTML = responcestring;                                  
                             //cFunction(this);
+                             document.getElementById('l5').value = 'Register SucessFully';
                     }
                                                         
                         else
                         {
-                             alert("ERR OR: AJAX request status = " + xhttp.status);
+                             //alert("ERR OR: AJAX request status = " + xhttp.status);
                                // console.log("ERR OR: AJAX request status = " + xmlhttp.status);
                         }
                         // xmlhttp.open("GET", url, true);
