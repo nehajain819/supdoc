@@ -8,7 +8,7 @@
                        
 
  var data = JSON.parse(this.responseText);
-                        
+                      //alert(data);
                         for(var i=0; i<= data.length-2; i++)
                         {
                           var n = data[i].name;
@@ -144,7 +144,7 @@ xhttp.onreadystatechange = function() {
                     if (this.readyState == 4 && this.status == 200) {
                                     console.log('ok');  
                                     var responcestring = this.responseText;
-                                    console.log(responcestring);
+                                   // console.log(responcestring);
 
                         //             xmlhttp.open("GET", url, true);
                         // xmlhttp.send();

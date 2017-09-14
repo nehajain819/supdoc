@@ -37,7 +37,16 @@ margin-top: -20px;
 #ul1{
    background-color: black;
 }
+
 #ul1 li a:hover{
+    background-color: lightcoral;
+}
+#ul3{
+    margin-top: -10px;
+   background-color: black;
+}
+
+#ul3 li a:hover{
     background-color: lightcoral;
 }
 #body1{

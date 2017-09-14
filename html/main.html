@@ -26,15 +26,21 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>                        
                 </button>
-        <div class="collapse navbar-collapse navbar-fixed-top" id="myNavbar">
-          <ul id="ul1" class="nav navbar-nav">
-            <li class="active"><a class="navbar-right" href="#">Home</a></li>
-            <li><a href="../html/form.html">User Registration</a></li>
-            <li><a href="../html/subdoc.html">Project Registration</a></li>
-            <li><a href="../html/form2.html">SubDoc</a></li>
 
+        <div class="collapse navbar-collapse navbar-fixed-top" id="myNavbar">
+
+          <ul id="ul1">
+            <div id="some" class="nav navbar-nav">
+              <li class="active"><a class="navbar-right" href="#">Home</a></li>
+              <li><a href="../html/form.html">User Registration</a></li>
+              <li><a href="../html/subdoc.html">Project Registration</a></li>
+            </div>
+            <div class="nav navbar-nav">
+              <li><a href="../html/form2.html">SubDoc</a></li>
+            </div>
           </ul>
-          <ul id="ul1" class="nav navbar-nav navbar-right">
+
+          <ul id="ul3" class="nav navbar-nav navbar-right">
             <li><a href="../html/login.html#"><span class="glyphicon glyphicon-user"></span> Sign out</a></li>
           </ul>
         </div>
@@ -123,6 +129,57 @@
   <footer>
 
   </footer>
+  <script>
+//  var account = localStorage.getItem('_account');
+//  if (!account) return false;
+//    localStorage.removeItem('_account');
+//    account = atob(account);
+// account = JSON.parse(account);
+// fillFields(account.role);
+// alert(fillFields(account.role))
+  //  return true;
+
+var t = localStorage.getItem("role");
+console.log(t);
+
+    // $(document).ready(function () {
+    //   console.log("ready!");
+    //   function getUrlVars() {
+    //     var vars = [], hash;
+    //     console.log(vars);
+    //     var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+    //     console.log(hashes);
+    //     for (var i = 0; i < hashes.length; i++) {
+    //       hash = hashes[i].split('=');
+    //       console.log(hash);
+    //       (hash);
+    //       // vars[hash[0]] = hash[1];
+    //     }
+    //     return hash;
+    //   }
+
+    //   var params = getUrlVars();
+    //   console.log(params);
+    //   console.log(params[0]);
+    //   console.log(params[1]);
+    //   if (params[0] == "ist") {
+    //     var flag=params[1];
+
+        if (t=="Admin") {
+          //display all menus
+          console.log(t)
+        }
+        else {
+          console.log(t)
+          document.getElementById('some').style.display = 'none';
+        }
+    //   }
+    //   //console.log(params);
+
+    // });
+  </script>
+
+
 </body>
 
 </html>

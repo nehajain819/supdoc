@@ -41,7 +41,7 @@
                         // xmlhttp.send();
 
                                     
-                                        document.getElementById("demo").innerHTML = responcestring;                                  
+                                        //document.getElementById("demo").innerHTML = responcestring;                                  
                             //cFunction(this);
                             
                     }
