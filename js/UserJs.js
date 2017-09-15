@@ -15,22 +15,22 @@
 
                 if(a=="")
                 {
-                    document.getElementById('la1').value = 'Please Enter text';
+                    document.getElementById('la1').innerHTML= 'Please Enter text';
                     //alert("enter value");
                 }
                 if(b=="")
                 {
-                    document.getElementById('la2').value = 'Please Enter text';
+                    document.getElementById('la2').innerHTML = 'Please Enter text';
                    // alert("enter value");
                 }
                  if(n=="")
                 {
-                    document.getElementById('la3').value = 'Please Enter text';
+                    document.getElementById('la3').innerHTML = 'Please Enter text';
                   //  alert("enter value");
                 }
                  if(c=="")
                 {
-                    document.getElementById('la4').value = 'Please Enter text';
+                    document.getElementById('la4').innerHTML= 'Please Enter text';
                    // alert("enter value");
                 }
                 
@@ -90,12 +90,12 @@
             //                             }
 
             else{
-                document.getElementById('la3').value = 'Password Is Not Match';
+                document.getElementById('la3').innerHTML = 'Password Is Not Match';
                // alert("password and confirm password are not match");
             }
                 }
                 else{
-                   document.getElementById('la5').value = 'Please Fill The Form';
+                   document.getElementById('la5').innerHTML = 'Please Fill The Form';
                 }
                 document.getElementById('textbox1').value="";
                document.getElementById('password1').value="";

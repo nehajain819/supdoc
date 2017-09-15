@@ -84,15 +84,15 @@ function validatefun(){
   xhttp.open("POST", "http://10.1.7.113:4000/api/supdocs", true);
   xhttp.setRequestHeader("Content-type", "application/json");
 var obj=document.getElementById("elementId1").options[document.getElementById("elementId1").selectedIndex];
-//alert(obj.value);
+
 var ans1 = obj.value;
 
 var obj0=document.getElementById("elementId2").options[document.getElementById("elementId2").selectedIndex];
-//alert(obj.value);
+
 var ans0 = obj0.value;
-//alert(ans0);
+
 var ans2 = obj.name;
-//alert(ans2);
+
 g = new Date();
 
 var current1 = {
@@ -100,14 +100,6 @@ var current1 = {
 };
 
 
-
-// var current = {
-//              _date= g
-//             //   task = {
-//             //         //
-                    
-//             //     }
-// }
 
 
 var nam8 = document.getElementById("txt2").value;
