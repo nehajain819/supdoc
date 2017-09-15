@@ -6,9 +6,6 @@
     margin-left: 35%;
     margin-top: 2%;
 }
-#textbox1{
-    
-}
 #l3{
     background-color: black;
     border: none;
@@ -18,28 +15,47 @@
     background-color: black;
     border: none;
     color: red;
+    position: fixed;
+   
+          margin-top: 3px;
 }
 #la2{
     background-color: black;
     border: none;
     color: red;
+    position: fixed; 
+           margin-top: 3px;
 }
 #la3{
     background-color: black;
     border: none;
     color: red;
+    position: fixed;
+     
+           margin-top: 3px;
 }
 #la4{
     background-color: black;
     border: none;
     color: red;
+    position: fixed;
+    margin-top: 3px;
 }
 #la5{
     background-color: black;
     border: none;
     color: red;
+    position: fixed;
+    margin-top: 3px;
 }
+#l3{
+    background-color: black;
+    border: none;
+    color: red;
+    background-repeat: none;
+    position: fixed;
 
+}
 
 
 #l4{
@@ -47,6 +63,7 @@
     border: none;
     color: red;
     background-repeat: none;
+    position: fixed;
 
 
 }
@@ -55,8 +72,7 @@
     border: none;
     color: red;
     background-repeat: none;
-
-
+    position: fixed;
 }
 
 body{
@@ -100,6 +116,8 @@ body{
 }
 #labelproj{
     color: white;
+    margin: 10px;
+
 }
 #b1{
     margin: 20px;
@@ -144,6 +162,7 @@ body{
 }
 #dec{
     color:white;
+    margin: 15px;
 }
 
 #f4{
@@ -166,6 +185,7 @@ body{
 
 #formfeild{
     margin-left: 0%;
+   
 }
 #formfeild2{
     margin-left: 10%;
@@ -194,9 +214,11 @@ margin-left: 65px;
 }
 #textboxsub{
   width: 300px;
+ 
 }
 #textboxsub2{
      width: 300px;
+      
 }
 #feilds1{
 margin-left: 10%;

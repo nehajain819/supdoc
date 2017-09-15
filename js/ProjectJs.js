@@ -22,27 +22,27 @@ function validatefun(url) {
                 members: b
             }));
         xmlhttp.onreadystatechange = function () {
-            console.log("this.readyState :: ", this.readyState + "this.status :: ", this.status);
             if (this.readyState == 4 && this.status == 200) {
-                console.log('ok');
+               
                 var responcestring = xmlhttp.responseText;
-                console.log(responcestring);
+               
             }
         }
-        document.getElementById('l5').style.display = 'block';
+        document.getElementById('l5').style.display.fixed = 'block';
         document.getElementById('l5').innerHTML = 'Register SucessFully'
     }
     else {
         document.getElementById('l5').innerHTML = 'Please Fill The All Fields';
-    }
-    document.getElementById('textboxsub').value = "";
+         document.getElementById('textboxsub').value = "";
     document.getElementById('textboxsub2').value = "";
+    }
+   
 }
 function hideele() {
-    document.getElementById('l3').style.display = 'none';
+    document.getElementById('l3').style.display.fixed= '';
 }
 function hideele1() {
-    document.getElementById('l4').style.display = 'none';
-    document.getElementById('l5').style.display = 'none';
+    document.getElementById('l4').style.display.fixed = '';
+    document.getElementById('l5').style.display.fixed = '';
 }
 

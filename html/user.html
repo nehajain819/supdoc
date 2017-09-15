@@ -1,27 +1,18 @@
 <!DOCTYPE>
 <html>
 <title>Status Form</title>
-
 <head>
-
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" type="text/css" href="../css/cssfile.css" type="" />
+    <link rel="stylesheet" type="text/css" href="../css/cssfile.css" />
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <script src="../js/UserJs.js"></script>
-    <script src="../js/jquery.js">
-
-    </script>
+    <script src="../js/jquery.js"></script>
     <script src="../bootstrap/js/bootstrap.min.js">
-
     </script>
 </head>
-
 <body>
     <header>
-
         <nav class="navbar navbar-inverse navbar-fixed-top ">
             <div class="container-fluid navbar-left">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -30,25 +21,18 @@
                     <span class="icon-bar"></span>                        
                 </button>
                 <div class="collapse navbar-collapse navbar-fixed-top" id="myNavbar">
-                    <div id="showbar">
-                        <ul id="ul1" class="nav navbar-nav">
-                        </ul>
-                    </div>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="../html/login.html#"><span class="glyphicon glyphicon-user"></span> Sign out</a></li>
                     </ul>
                 </div>
             </div>
-
         </nav>
         <div id="header1">
-
         </div>
     </header>
     <div class="container">
         <form id="f3">
             <p id="s">USER REGISTRAION</p>
-
             <div id="formfeild">
                 <div class="form-group" id="inner">
                     <label for="usr" id="dec">Email Id:</label>
@@ -64,32 +48,22 @@
                     <label for="pwd" id="dec">Confirm Password:</label>
                     <input type="password" id="password" class="form-control" id="pwd">
                     <label for="Error Name" id="la3"></label>
-                    <label for="usr" id="error"></label>
                 </div>
                 <div class="form-group" id="inner">
                     <label for="usr" id="dec">User Name:</label>
                     <input type="text" id="textbox1" class="form-control" id="usr">
                     <label for="Error Name" id="la4"></label>
                 </div>
-           
-
-
-
                 <label for="usr" id="l1">Role:</label>
-       
                 <select id="elementId">
                 <option value="Admin">Admin</option>
-                <option value="Team Members" onclick="drop()">Team Member</option>
-                
+                <option value="Team Members">Team Member</option>
         </select>
                 </br>
-
-
                 <a href="#" id="n"><button type="button" class="btn" id="nb" onclick="validatefun('http://10.1.7.113:4000/api/users')">SUBMIT</button></a>
-                <label="Error Name" id="la5"></label>
+                <label for="Error Name" id="la5"></label>
             </div>
         </form>
     </div>
 </body>
-
 </html>

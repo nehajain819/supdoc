@@ -26,7 +26,7 @@ function validatefun(url) {
                 console.log(json);
     
                 if (json == false) {
-                    document.getElementById('l5').style.display = 'block';
+                    document.getElementById('l5').style.display.fixed = 'block';
                    document.getElementById('l5').innerHTML='Invalid User';
                 }
                 else {
@@ -40,10 +40,10 @@ function validatefun(url) {
     }
 }
 function hideele() {
-    document.getElementById('l3').style.display = 'none';
+    document.getElementById('l3').style.display.fixed = 'none';
 }
 function hideele1() {
-    document.getElementById('l4').style.display = 'none';
-    document.getElementById('l5').style.display = 'none';
+    document.getElementById('l4').style.display.fixed = 'none';
+    document.getElementById('l5').style.display.fixed = 'none';
 }
 
